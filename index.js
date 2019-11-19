@@ -4,17 +4,24 @@ import ZipForm from './zipcode.component';
 import './style.css';
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: 'React'
-    };
-  }
+constructor(props) {
+  super(props);
+
+  this.state = {
+    zipcode: '',
+  };
+  this.onFormSubmit = this.onFormSubmit.bind(this);
+}
+
+  onFormSubmit(zipcode) {
+    console.log(zipcode);
+  this.setState({ zipcode });
+}
 
   render() {
     return (
       <div>
-        <ZipForm />
+        <ZipForm onSubmit={this.onFormSubmit} />
       </div>
     );
   }
