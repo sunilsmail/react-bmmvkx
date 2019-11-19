@@ -14,6 +14,7 @@ constructor(props) {
 }
 
   onFormSubmit(zipcode) {
+    alert(zipcode)
     console.log(zipcode);
   this.setState({ zipcode });
 }
