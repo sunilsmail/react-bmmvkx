@@ -10,7 +10,7 @@ class ZipForm extends Component {
             className="form-control"
             type="input"
             name="zipcode"/>
-          <button type="submit" className='btn btn-success'>Get the forecast!!</button>
+          <button type="button" className='btn btn-success'>Get the forecast!!</button>
         </form>
       </div>
     );
